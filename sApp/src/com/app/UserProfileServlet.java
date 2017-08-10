@@ -24,20 +24,20 @@ public class UserProfileServlet extends HttpServlet {
 		response.setContentType("text/html");
 		response.setCharacterEncoding("utf-8");
 		String regOK = request.getParameter("regOK");
-		lg.log(Level.INFO, "##### Inside UserProfileServlet->doGet(), regOK = " + regOK);
+		lg.log(Level.INFO, "##### UserProfileServlet->doGet(), regOK = " + regOK);
 		if (regOK != null) {
 			if (regOK.equals("1")) {
-				lg.log(Level.INFO, "##### Inside UserProfileServlet->doGet(), user is registered!");
+				lg.log(Level.INFO, "##### UserProfileServlet->doGet(), user is registered!");
 				response.setStatus(200);
 				request.getRequestDispatcher(TEMPLATE_PATH + "profile.html").forward(request, response);
-				lg.log(Level.INFO, "##### Inside UserProfileServlet->doGet(), ended.");
+				lg.log(Level.INFO, "##### UserProfileServlet->doGet(), ended.");
 				return;
 			}
 		}
-		lg.log(Level.INFO, "##### Inside UserProfileServlet->doGet(), user is not registered!");
+		lg.log(Level.INFO, "##### UserProfileServlet->doGet(), user is not registered!");
 		response.setStatus(401);
 		request.getRequestDispatcher(TEMPLATE_PATH + "fault_unauthorized.html").forward(request, response);
-		lg.log(Level.INFO, "##### Inside UserProfileServlet->doGet(), ended.");
+		lg.log(Level.INFO, "##### UserProfileServlet->doGet(), ended.");
 	}
 
 }
