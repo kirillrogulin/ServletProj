@@ -9,8 +9,43 @@
     <title>Registration</title>
 </head>
 <body>
-    <form method="post" action="register">
-        <div>
+    <div class="container">
+    <div class="row">
+		<div class="span12">
+			<form class="form-horizontal" method="post" action="register">
+	        	<fieldset>
+				    <div id="legend">
+				      <legend class="text-left">Login</legend>
+				    </div>
+				    <div class="control-group">
+				      <!-- Username -->
+				      <label class="control-label"  for="username">Username</label>
+				      <div class="controls">
+				        <input type="text" id="username" name="username" placeholder="User" class="input-xlarge">
+				      </div>
+				    </div>
+				    <div class="control-group">
+				      <!-- Password-->
+				      <label class="control-label" for="password">Password</label>
+				      <div class="controls">
+				        <input type="password" id="password" name="password" placeholder="password" class="input-xlarge">
+				      </div>
+				    </div>
+				    <div class="control-group">
+				      <!-- Button -->
+				      <div class="controls">
+				        <button class="btn btn-success">Login</button>
+				      </div>
+				    </div>
+				  </fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+        
+        
+        
+        <!-- <div>
             <label for="username"></label>
             <input type="text" id="username" name="username">
         </div>
@@ -20,7 +55,6 @@
         </div>
         <div>
             <input type="submit">
-        </div>
-    </form>
+        </div> -->
 </body>
 </html>
