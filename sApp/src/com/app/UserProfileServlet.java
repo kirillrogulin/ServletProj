@@ -36,7 +36,7 @@ public class UserProfileServlet extends HttpServlet {
 		}
 		lg.log(Level.INFO, "##### Inside UserProfileServlet->doGet(), user is not registered!");
 		response.setStatus(401);
-		request.getRequestDispatcher(TEMPLATE_PATH + "fault.html").forward(request, response);
+		request.getRequestDispatcher(TEMPLATE_PATH + "fault_unauthorized.html").forward(request, response);
 		lg.log(Level.INFO, "##### Inside UserProfileServlet->doGet(), ended.");
 	}
 

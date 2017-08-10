@@ -23,11 +23,7 @@ public class DefaultServlet extends HttpServlet {
 		response.setContentType("text/html");
 		response.setCharacterEncoding("utf-8");
 		response.setStatus(200);
-		request.getRequestDispatcher("WEB-INF/views/index.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/views/index.html").forward(request, response);
 		lg.log(Level.INFO, "##### Inside DefaultServlet->doGet(), ended!");
 	}
-
-//	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		doGet(request, response);
-//	}
 }
